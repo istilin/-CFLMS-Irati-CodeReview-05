@@ -1,0 +1,50 @@
+var movies =`[{
+	"title" : "Le Concert",
+	"imgsrc" : "img/le_concert.jpg",
+	"director" : "Radu Mihaileanu",
+	"cast" : "Aleksey Guskov, Dmitriy Nazarov, Mélanie Laurent",
+	"genre": "Comedy, Drama, Music",
+	"year": "2009",
+	"description": "Thirty years ago Bolshoi Orchestra conductor Andreï Filipov was fired for hiring Jewish musicians. Now a lowly janitor, an opportunity arises to gather his old musicians to go and pose as the official Buolshoi orchestra in Paris."
+},{
+	"title" : "Intouchables",
+	"imgsrc" : "img/intouchables.jpg",
+	"director" : "Olivier Nakache, Éric Toledano",
+	"cast" : "François Cluzet, Omar Sy, Anne Le Ny",
+	"genre": "Biography, Comedy, Drama",
+	"year": "2011",
+	"description": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver."
+},{
+	"title" : "Les Choristes",
+	"imgsrc" : "img/choristes.jpg",
+	"director" : "Christophe Barratier",
+	"cast" : "Gérard Jugnot, François Berléand, Jean-Baptiste Maunier",
+	"genre": "Drama, Music",
+	"year": "2004",
+	"description": "The new teacher at a severely administered boys' boarding school works to positively affect the students' lives through music."
+},{
+	"title" : "Amelie",
+	"imgsrc" : "img/amelie.jpg",
+	"director" : "Jean-Pierre Jeunet",
+	"cast" : "Audrey Tautou, Mathieu Kassovitz, Rufus",
+	"genre": "Comedy, Romance",
+	"year": "2001",
+	"description": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love."
+},{
+	"title" : "Bienvenue chez les Ch'tis",
+	"imgsrc" : "img/sticks.jpg",
+	"director" : "Dany Boon",
+	"cast" : "Kad Merad, Dany Boon, Zoé Félix",
+	"genre": "Comedy, Romance",
+	"year": "2008",
+	"description": "A French public servant from Provence is banished to the far North. Strongly prejudiced against this cold and inhospitable place, he leaves his family behind to relocate temporarily there, with the firm intent to quickly come back."
+},{
+	"title" : "Diecisiete",
+	"imgsrc" : "img/diecisiete.jpg",
+	"director" : "Daniel Sánchez Arévalo",
+	"cast" : "Biel Montoro, Nacho Sánchez, Lola Cordón",
+	"genre": "Drama",
+	"year": "2019",
+	"description": "To find a shelter dog he befriended, a 17-year-old boy escapes a juvenile detention center and is joined on his quest by his older brother."	
+}]`
+
