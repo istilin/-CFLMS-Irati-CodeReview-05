@@ -12,14 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%; }
-  body #main_head, body #main_footer {
-    padding: 2%;
-    width: 0 auto;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    color: white; }
-    body #main_head h1, body #main_footer h1 {
+    body header h1, body footer h1 {
       font-size: 8vw;
       margin: 0; }
   body nav {
@@ -37,98 +30,125 @@ body {
         body nav ul li a {
           color: white;
           text-decoration: none; }
-  body #main_box {
-    width: 100%;
-    background-color: #1D242A;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  body #movie_titles {
-    width: 100%;
-    padding-left: 44%;
-    display: flex;
-    margin: 1%;
-    justify-content: space-between; }
-    body #movie_titles h1 {
-      color: white;
-      font-size: 5vw;
-      margin: 0; }
-  body #buttons {
-    margin-right: 10%; }
-  body #sort_button {
-    background-color: #1D242A;
+
+#main_head, #main_footer {
+  padding: 2%;
+  width: 0 auto;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+#main_box {
+  width: 100%;
+  background-color: #1D242A;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#movie_titles {
+  width: 100%;
+  padding-left: 44%;
+  display: flex;
+  margin: 1%;
+  justify-content: space-between; }
+  #movie_titles h1 {
     color: white;
     font-size: 5vw;
-    border: 0;
     margin: 0; }
-  body #sub_buttons {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    background-color: rgba(29, 36, 42, 0.6); }
-  body .sub_button {
-    border: 0;
-    background-color: inherit;
-    color: white;
-    font-size: 2.5vw;
+
+#buttons {
+  margin-right: 10%; }
+
+#sort_button {
+  background-color: #1D242A;
+  color: white;
+  font-size: 5vw;
+  border: 0;
+  margin: 0; }
+
+#sub_buttons {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(29, 36, 42, 0.6); }
+
+.sub_button {
+  border: 0;
+  background-color: inherit;
+  color: white;
+  font-size: 2.5vw;
+  width: 100%; }
+
+.arrow {
+  border: solid white;
+  border-width: 0 0.5vw 0.5vw 0;
+  display: inline-block;
+  padding: 0.5vw;
+  transform: rotate(-45deg);
+  margin: 0 0 10% 0; }
+
+.sub_button:hover {
+  background-color: rgba(24, 24, 24, 0.6); }
+
+#buttons:hover #sub_buttons {
+  display: block; }
+
+#buttons:hover .arrow {
+  transform: rotate(45deg); }
+
+#buttons #sort_button:hover {
+  background-color: #181818; }
+
+#film_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20%; }
+
+.film {
+  background-color: #181818;
+  color: white;
+  margin: 3%;
+  display: flex;
+  align-items: center; }
+
+.image_box {
+  width: 40%;
+  margin: 2%; }
+  .image_box img {
     width: 100%; }
-  body .arrow {
-    border: solid white;
-    border-width: 0 0.5vw 0.5vw 0;
-    display: inline-block;
-    padding: 0.5vw;
-    transform: rotate(-45deg);
-    margin: 0 0 10% 0; }
-  body .sub_button:hover {
-    background-color: rgba(24, 24, 24, 0.6); }
-  body #buttons:hover #sub_buttons {
-    display: block; }
-  body #buttons:hover .arrow {
-    transform: rotate(45deg); }
-  body #buttons #sort_button:hover {
-    background-color: #181818; }
-  body #film_box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20%; }
-  body .film {
-    background-color: #181818;
-    color: white;
-    margin: 3%;
-    display: flex;
-    align-items: center; }
-  body .image_box {
-    width: 40%;
-    margin: 2%; }
-    body .image_box img {
-      width: 100%; }
-  body .info_box {
-    width: 60%;
-    margin: 2%; }
-    body .info_box h2 {
-      margin: 0;
-      text-align: center;
-      margin: 4%; }
-    body .info_box p {
-      margin: 0; }
-    body .info_box h6 {
-      margin: 4% 0;
-      text-align: justify; }
-  body .like_box {
-    display: flex;
-    justify-content: flex-end; }
-    body .like_box button {
-      color: #52A23F;
-      margin: 0 2%;
-      border: 0;
-      background-color: #181818; }
-  body .likey {
+
+.info_box {
+  width: 60%;
+  margin: 2%; }
+  .info_box h2 {
+    margin: 0;
+    text-align: center;
+    margin: 4%; }
+  .info_box p {
+    margin: 0; }
+  .info_box h6 {
+    margin: 4% 0;
+    text-align: justify; }
+
+.like_box {
+  display: flex;
+  justify-content: flex-end; }
+  .like_box button {
+    color: #52A23F;
     margin: 0 2%;
-    border-radius: 50%;
-    background-color: #52A23F;
-    color: white;
-    padding: 0 4.5%; }
+    border: 0;
+    background-color: #181818; }
+
+.likey {
+  margin: 0 2%;
+  border-radius: 50%;
+  background-color: #52A23F;
+  color: white;
+  padding: 0 4.5%;
+  width: 3.8vw;
+  text-align: center; }
 
 @media screen and (min-width: 481px) {
   .film {
